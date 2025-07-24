@@ -1,0 +1,143 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Arial', sans-serif;
+    background-image: url("../image/background.jpg");  
+    background-size: cover;
+    /* color: black !important; */
+}
+    
+  
+  .login-card {
+    width: 400px;
+    padding: 40px;
+    background-color: #00000030;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    /* border-image: linear-gradient(135deg, #3E8EFD, #0F9B98) 1; */
+    border-color: #3E8EFD; 
+    border-radius:20px;
+  
+ 
+
+  }
+  
+  .login-card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    background: linear-gradient(135deg, #3E8EFD, #0F9B98);
+    border-radius: 18px;
+  }
+  
+  .login-title {
+    color: var(--main-white);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* .form-group label {
+    color: var(--main-white);
+    font-size: 0.9rem;
+    color: #555;
+  } */
+  .form-input {
+    padding: 12px 20px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #0d8683;
+    background-color: rgba(224, 224, 224, 0.9);
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    color: #333;
+    /* padding: 500px; */
+
+  }
+  
+  .form-input:focus {
+    outline: none;
+    /* border-color: #3E8EFD; */
+    border-color: red;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 1px 1px 10px #3E8EFD;
+    color: black;
+  }
+  
+  /* Optional: Add placeholder styling */
+  .form-input::placeholder {
+    color: #888;
+    opacity: 1;
+  }
+  
+  /* Optional: Add hover effect */
+  .form-input:hover {
+    border-color: #0F9B98;
+  }
+  
+  .forgot-password {
+    align-self: flex-end;
+    font-size: 0.8rem;
+    color: #3E8EFD;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-image: linear-gradient(to right,#0F9B98,#3E8EFD);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .login-button:hover {
+    background-image: linear-gradient(to right, #208482,#3E8EFD);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(62, 142, 253, 0.3);
+  }
+
+
+  /* loading */
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }

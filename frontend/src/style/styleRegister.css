@@ -1,0 +1,117 @@
+/* Register.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Arial', sans-serif;
+    background-image: url("../image/background.jpg");  
+    background-size: cover;
+  }
+  
+  .register-card {
+    width: 400px;
+    padding: 40px;
+    background: #0000005c;
+    /* border-radius: 15px; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-color: #3E8EFD; 
+    border-radius:20px;
+  }
+  
+  /* .register-card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    background: linear-gradient(135deg, #3E8EFD, #0F9B98);
+    border-radius: 18px;
+  } */
+  
+  .register-title {
+    color: var(--main-white);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* .form-group label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+   */
+  .form-input {
+    padding: 12px 20px;
+    width: 100%;
+    outline: none;
+    border: 2px solid #0d8683;
+    background-color: rgba(224, 224, 224, 0.9);
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  .form-input:focus {
+    border-color: #3E8EFD;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 3px rgba(62, 142, 253, 0.2);
+  }
+  
+  .register-button {
+    padding: 14px;
+    border: none;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #3E8EFD, #0F9B98);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* margin-top: 10px; */
+    margin: 10px auto 0;
+    width: 50%;
+  }
+  
+  .register-button:hover {
+    background-image: linear-gradient(to right, #2d7ae6, #0d8683);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(62, 142, 253, 0.3);
+  }
+
+
+
+  /* Register.css */
+.register-card {
+    /* background-color: var(--card-bg); */
+    background-color: #00000030;
+    color: var(--text-color);
+  }
+  
+  .form-input {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+  }

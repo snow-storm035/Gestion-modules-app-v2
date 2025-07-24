@@ -1,0 +1,115 @@
+
+.container-fluid {
+  
+    margin: 30px auto 0;
+  
+
+}
+.avancements-h2 {
+    /* background-color: red; */
+    margin-top: -10px;
+    color: black;
+}
+.reset-btn-filiere{
+    /* background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 100px;
+    padding: 5px; */
+    padding: 8px 16px;
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 150px;
+    margin: 2px;
+}
+.reset-btn-filiere:hover {
+  background-color: var(--light-blue);
+}
+.flex-ajouter-filiere {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+td{
+    padding: 4px !important;
+   text-align: center;
+   align-content: center;
+  }
+.card-body-Filiere {
+    border-radius: 8px;
+    display: flex;
+     flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-Filiere {
+    border: 1px solid grey;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 6px 4px rgba(128, 128, 128, 0.711);
+    
+    padding: 10px;
+    background-color: white;
+}
+
+.card-body-dark-filiere {
+    background-color: black;
+}
+.card-Filiere-dark-mode{
+    background-color:var(--dark-grey)
+}
+.avancements-h2-dark-mode h2{
+    color: white;
+}
+/* button in table Detail filiere */
+
+.btn-Detail-filiere{
+    border: none;
+    background-color: var(--main-green);
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+}
+
+.pagination-container-filiere {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* margin-top: 1rem;  */
+   margin: 10px ;
+  }
+  
+  .pagination-btn-filiere {
+    border: 1px solid #0d6efd; /* Bootstrap's primary color */
+    color: #0d6efd;
+    background-color: transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 150px;
+  }
+  
+  .pagination-btn-filiere:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  .pagination-btn-filiere:hover:not(:disabled) {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  .current-page-filiere {
+    color: var(--main-blue);
+  }

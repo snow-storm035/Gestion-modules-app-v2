@@ -1,0 +1,32 @@
+/* body{
+    background-color: aquamarine !important;
+} */
+.container-fluid{
+    /* background-color: red; */
+  margin: 30px auto 0;
+    /* background-color: var(--main-white); */
+ 
+}
+ .flex-ajouter-group{
+     /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.card-body{
+    
+    border-radius: 8px;
+    background-color:var(--main-white);
+}
+.card{
+    border: 1px solid grey;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 6px 4px rgba(128, 128, 128, 0.711);
+    }
+
+    .card-body_dark_group {
+        background-color:black;
+    }

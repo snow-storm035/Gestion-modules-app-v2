@@ -1,0 +1,148 @@
+/* Main container */
+.progress-container {
+  font-family: 'Arial', sans-serif;
+ 
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0;
+  /* background-color: red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 2.5rem; 
+  height: 40vh;
+
+}
+
+
+
+/* Title */
+.progress-title {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* Each progress item */
+.progress-container .progress-item {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color:white !important;
+
+}
+
+/* Progress header (name and percentage) */
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  background-color: white !important;
+  
+  /* border-radius: 10px; */
+}
+.progress-header span{
+  color: black;
+}
+/* SVG progress bar container */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+}
+
+/* Progress bar background */
+.progress-bar-bg {
+  fill: #e0e0e0;
+}
+
+/* Progress bar fill */
+.progress-bar-fill {
+  fill: var(--main-blue); /* Default (low) color */
+}
+
+.progress-bar-fill.high {
+  fill: var(--main-green); /* High progress color */
+  /* fill: linear-gradient(to left,#4CAF50,#FFC107); */
+}
+
+
+
+.progress-container .button-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* display: flex; */
+  /* justify-content: end; */
+ 
+}
+
+.details-button {
+  padding: 8px 16px;
+  background-color: var(--main-green);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.details-button:hover {
+  background-color: #13c4c1;
+}
+/* Details panel */
+.details-panel {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.details-panel h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.details-panel ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.details-panel li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.progress-container-dark-mode-progers{
+  background-color: black;
+}
+.progress-container-dark-mode-progers .progress-item{
+  background-color: black !important;
+}
+.progress-container-dark-mode-progers .progress-item .progress-header{
+  background-color: var( --dark-grey) !important;
+ 
+
+}
+.progress-container-dark-mode-progers .progress-item .progress-header span{
+  padding: 2px;
+  color:  var(--main-white);
+  border-radius: 5px;
+}

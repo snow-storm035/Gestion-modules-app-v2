@@ -1,0 +1,218 @@
+/* Main Container */
+.avancement-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 95vh;
+    /* background-color: red; */
+  }
+  
+  /* Top Section */
+  .top-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px grey;
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .page-title {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 28px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  /* Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+  
+  .stat-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card.wide {
+    grid-column: span 2;
+    
+  }
+  
+  .stat-icon {
+    font-size: 24px;
+    color: #3498db;
+    margin-right: 15px;
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  .stat-content {
+    flex: 1;
+
+  }
+  
+  .stat-content h3 {
+    margin: 0 0 8px 0;
+    color: #34495e;
+    font-size: 16px;
+  }
+  
+  .stat-content p {
+    margin: 4px 0;
+    color: #2c3e50;
+    font-size: 14px;
+  }
+  
+  .stat-content .subtext {
+    color: #7f8c8d;
+    font-size: 12px;
+  }
+  
+  /* Hours Grid */
+  .hours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .hours-grid div {
+    text-align: center;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #2980b9;
+    font-size: 16px;
+  }
+  
+  /* Status Indicators */
+  .status-completed {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .status-pending {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stat-card.wide {
+      grid-column: span 1;
+    }
+  }
+
+
+
+
+  /* Hours Modification Section */
+.hours-modification-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.hours-modification-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hours-modification-section h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.hours-modification-controls {
+  /* flex: 1; */
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  gap: 15px;
+ 
+}
+
+.hours-input {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 90px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.current-hours {
+  font-weight: bold;
+  color: #2980b9;
+  font-size: 16px;
+}
+
+.btn-modifier-hours, .btn-save-hours {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-modifier-hours {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-modifier-hours:hover {
+  background-color: #2980b9;
+}
+
+.btn-save-hours {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-save-hours:hover {
+  background-color: #219653;
+}
+
+/* dark mode */
+.top-section-dark-mode-section{
+  background-color: var(--main-black);
+
+}
+.top-section-dark-mode-section .stat-card{
+  background-color: var(--dark-grey);
+
+
+}
+.top-section-dark-mode-section  .color-all-text{
+  color: white;
+}
+
+.hours-modification-section-dark-mode{
+  background-color: var(--dark-grey);
+}
